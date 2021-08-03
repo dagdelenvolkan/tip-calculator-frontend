@@ -37,13 +37,15 @@ $white: #fff;
         border-radius: 20px;
         display: flex;
         padding: 30px;
-        gap: 0 30px;
+        gap: 0 40px;
 
         .tipInputs {
-            padding: 10px 0 10px 0;
+            padding: 10px 0 10px 0px;
             display: flex;
+            flex: 1;
             flex-direction: column;
             justify-content: space-between;
+            margin-left: 10px;
 
             .bill-input-section {
                 position: relative;
