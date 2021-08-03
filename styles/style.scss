@@ -9,6 +9,7 @@ $dark-gray-cyan: hsl(184, 14%, 56%);
 $light-gray-cyan: hsl(185, 41%, 84%);
 $lightest-gray-cyan: hsl(189, 41%, 97%);
 $white: #fff;
+$error: #eb4d4b;
 
 // RESET
 * {
@@ -117,6 +118,10 @@ $white: #fff;
                     border-radius: 5px;
                     border: none;
                     background-color: $lightest-gray-cyan;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: bold;
+                    outline-color: $strong-cyan;
 
                     &::placeholder {
                         color: $dark-gray-cyan;
@@ -129,6 +134,16 @@ $white: #fff;
             }
             .people-number-section {
                 position: relative;
+
+                .people-number-error {
+                    position: absolute;
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: $error;
+                    top: -30px;
+                    right: 0;
+                    display: none;
+                }
 
                 object {
                     position: absolute;
@@ -191,7 +206,6 @@ $white: #fff;
 
                         &:before {
                             content: '$';
-                            margin-right: -25px;
                         }
                     }
                 }

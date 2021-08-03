@@ -135,6 +135,10 @@
   border-radius: 5px;
   border: none;
   background-color: #f4fafa;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  outline-color: #26c0ab;
 }
 
 .container .tipCalc .tipInputs .select-tip-section .custom-tip-rate::-webkit-input-placeholder {
@@ -167,6 +171,16 @@
 
 .container .tipCalc .tipInputs .people-number-section {
   position: relative;
+}
+
+.container .tipCalc .tipInputs .people-number-section .people-number-error {
+  position: absolute;
+  font-size: 13px;
+  font-weight: bold;
+  color: #eb4d4b;
+  top: -30px;
+  right: 0;
+  display: none;
 }
 
 .container .tipCalc .tipInputs .people-number-section object {
@@ -252,7 +266,6 @@
 
 .container .tipCalc .tipOutput .results .tipAmnt .tip-amnt-value:before, .container .tipCalc .tipOutput .results .total .tip-amnt-value:before {
   content: '$';
-  margin-right: -25px;
 }
 
 .container .tipCalc .tipOutput button {

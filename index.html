@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>TIP CALCULATOR</title>
 </head>
 <body>
@@ -16,20 +17,23 @@
             <div class="tipInputs">
                 <div class="bill-input-section">
                     <object data="./assets/icon-dollar.svg" type=""></object>
-                    <input type="text" class="bill-input">
+                    <input type="text" class="bill-input" placeholder="0">
                 </div>
                 <div class="select-tip-section">
-                    <div class="tip-rate">5%</div>
-                    <div class="tip-rate">10%</div>
-                    <div class="tip-rate">15%</div>
-                    <div class="tip-rate">25%</div>
-                    <div class="tip-rate">50%</div>
-                    <input type="text" class="custom-tip-rate" placeholder="Custom">
+                    <div class="tip-rate rate-5">5%</div>
+                    <div class="tip-rate rate-10">10%</div>
+                    <div class="tip-rate rate-15">15%</div>
+                    <div class="tip-rate rate-25">25%</div>
+                    <div class="tip-rate rate-50">50%</div>
+                    <input type="text" class="custom-tip-rate"  placeholder="Custom">
                 </div>
                 <div class="people-number-section">
+                    <span class="people-number-error">Can't be zero</span>
                     <object data="./assets/icon-person.svg" type=""></object>
                     <input type="
-                    " class="people-number-input">
+                    " class="people-number-input"
+                    placeholder='0'
+                    >
                 </div>
             </div>
             <!-- Outputs -->
@@ -39,22 +43,20 @@
                         <div class="tip-amnt-text">
                             Tip Amount
                         </div>
-                        <div class="tip-amnt-value">
-                            4.27
-                        </div>
+                        <div class="tip-amnt-value tip-amnt">0.00</div>
                     </div>
                     <div class="total">
                         <div class="tip-amnt-text">
                             Total
                         </div>
-                        <div class="tip-amnt-value">
-                            32.79
-                        </div>
+                        <div class="tip-amnt-value tip-amnt-total">0.00</div>
                     </div>
                 </div>
-                <button>RESET</button>
+                <button class="reset-tip">RESET</button>
             </div>
         </div>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
