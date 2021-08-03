@@ -5,4 +5,128 @@
           box-sizing: border-box;
   font-family: 'Space Mono', monospace;
 }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #c5e4e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .logo {
+  margin: auto;
+  margin-bottom: -150px;
+}
+
+.container .tipCalc {
+  width: 800px;
+  height: 400px;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  gap: 0 30px;
+}
+
+.container .tipCalc .tipInputs {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .tipCalc .tipOutput {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #00494d;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .tipCalc .tipOutput .results {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px 0;
+}
+
+.container .tipCalc .tipOutput .results .tipAmnt, .container .tipCalc .tipOutput .results .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .tipCalc .tipOutput .results .tipAmnt .tip-amnt-text, .container .tipCalc .tipOutput .results .total .tip-amnt-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #c5e4e7;
+  font-weight: bold;
+  position: relative;
+}
+
+.container .tipCalc .tipOutput .results .tipAmnt .tip-amnt-text:after, .container .tipCalc .tipOutput .results .total .tip-amnt-text:after {
+  content: '/ person';
+  position: absolute;
+  top: 25px;
+  left: 0;
+  font-size: 12px;
+  color: #7f9c9f;
+}
+
+.container .tipCalc .tipOutput .results .tipAmnt .tip-amnt-value, .container .tipCalc .tipOutput .results .total .tip-amnt-value {
+  margin-top: -8px;
+  font-size: 40px;
+  color: #26c0ab;
+  font-weight: bold;
+}
+
+.container .tipCalc .tipOutput .results .tipAmnt .tip-amnt-value:before, .container .tipCalc .tipOutput .results .total .tip-amnt-value:before {
+  content: '$';
+  margin-right: -25px;
+}
+
+.container .tipCalc .tipOutput button {
+  margin: 30px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: #26c0ab;
+  color: #00494d;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container .tipCalc .tipOutput button:hover {
+  background-color: #c5e4e7;
+}
 /*# sourceMappingURL=style.css.map */
