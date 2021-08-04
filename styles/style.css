@@ -70,6 +70,8 @@
   position: absolute;
   top: 35px;
   left: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .container .tipCalc .tipInputs .bill-input, .container .tipCalc .tipInputs .people-number-input {
@@ -187,6 +189,8 @@
   position: absolute;
   top: 10px;
   left: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .container .tipCalc .tipInputs .people-number-section:before {
@@ -282,5 +286,117 @@
 
 .container .tipCalc .tipOutput button:hover {
   background-color: #c5e4e7;
+}
+
+@media screen and (max-width: 830px) {
+  .logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0 !important;
+  }
+  .tipCalc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+    -webkit-box-flex: 5;
+        -ms-flex: 5;
+            flex: 5;
+    gap: 40px 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .tipCalc .tipInputs {
+    -webkit-box-flex: 2 !important;
+        -ms-flex: 2 !important;
+            flex: 2 !important;
+  }
+  .tipCalc .tipInputs .bill-input-section:before {
+    font-size: 16px !important;
+  }
+  .tipCalc .tipInputs .bill-input-section object {
+    top: 36px !important;
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .tipCalc .tipInputs .select-tip-section {
+    gap: 15px !important;
+  }
+  .tipCalc .tipInputs .select-tip-section:before {
+    font-size: 16px !important;
+    top: -30px !important;
+  }
+  .tipCalc .tipInputs .select-tip-section .tip-rate {
+    height: 50px !important;
+    font-size: 22px !important;
+  }
+  .tipCalc .tipInputs .select-tip-section .custom-tip-rate {
+    font-size: 22px !important;
+  }
+  .tipCalc .tipInputs .select-tip-section .custom-tip-rate::-webkit-input-placeholder {
+    font-size: 22px !important;
+  }
+  .tipCalc .tipInputs .select-tip-section .custom-tip-rate:-ms-input-placeholder {
+    font-size: 22px !important;
+  }
+  .tipCalc .tipInputs .select-tip-section .custom-tip-rate::-ms-input-placeholder {
+    font-size: 22px !important;
+  }
+  .tipCalc .tipInputs .select-tip-section .custom-tip-rate::placeholder {
+    font-size: 22px !important;
+  }
+  .tipCalc .tipInputs .people-number-section:before {
+    font-size: 16px !important;
+    top: -30px !important;
+  }
+  .tipCalc .tipInputs .people-number-section object {
+    top: 13px !important;
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .tipCalc .tipInputs .bill-input, .tipCalc .tipInputs .people-number-input {
+    height: 45px !important;
+    font-size: 30px !important;
+  }
+  .tipCalc .tipOutput {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 !important;
+            flex: 1 !important;
+  }
+  .tipCalc .tipOutput .results .tip-amnt-text {
+    font-size: 15px !important;
+  }
+  .tipCalc .tipOutput .results .tip-amnt-text:after {
+    font-size: 12px !important;
+    top: 25px !important;
+  }
+  .tipCalc .tipOutput .results .tip-amnt-value {
+    font-size: 34px !important;
+  }
+  .tipCalc button {
+    margin-top: 0 !important;
+    height: 45px !important;
+    font-size: 20px !important;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .tipCalc {
+    gap: 20px 0 !important;
+  }
+  .tipCalc .tipInputs .select-tip-section .tip-rate, .tipCalc .tipInputs .select-tip-section .custom-tip-rate {
+    width: 45% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
