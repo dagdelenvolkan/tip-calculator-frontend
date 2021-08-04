@@ -6,6 +6,19 @@
   font-family: 'Space Mono', monospace;
 }
 
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 .container {
   width: 100%;
   height: 100vh;
