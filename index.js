@@ -37,8 +37,8 @@ const selectCustomTipRate = () => {
     })
 
     customTipRate.on('input', (e) => {
-        calculateTip()
         tipRate = e.target.value
+        calculateTip()
     })
 }
 
