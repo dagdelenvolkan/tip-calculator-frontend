@@ -18,6 +18,10 @@ $error: #eb4d4b;
     font-family: 'Space Mono', monospace;
 }
 
+html {
+    height: -webkit-fill-available;
+}
+
 .attribution {
     font-size: 11px; 
     position: absolute;
@@ -291,7 +295,7 @@ $error: #eb4d4b;
                 }
 
                 .tip-rate {
-                    height: 50px !important;
+                    height: 40px !important;
                     font-size: 22px !important;
                 }
 
@@ -314,12 +318,12 @@ $error: #eb4d4b;
                 object {
                     top: 13px !important;
                     width: 18px !important;
-                    height: 18px !important;
+                    height: 15px !important;
                 }
             }
             
             .bill-input, .people-number-input{
-                height: 45px !important;
+                height: 35px !important;
                 font-size: 30px !important;
             
             }
@@ -340,21 +344,21 @@ $error: #eb4d4b;
                 }
 
                 .tip-amnt-value {
-                    font-size: 34px !important;
+                    font-size: 25px !important;
                 }
             }
         }
 
         button {
             margin-top: 0 !important;
-            height: 45px !important;
+            height: 40px !important;
             font-size: 20px !important;
         }
     }
 }
 
 
-@media screen and (max-width: 537px) {
+@media screen and (max-width: 575px) {
    
     
     .tipCalc {
